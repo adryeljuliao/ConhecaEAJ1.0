@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">ConhecaEAJ</string>
+    <string name="app_name">Guia EAJ</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="descricaoEAJ">A Escola Agrícola de Jundiaí foi criada pela lei Nº 202 de dezembro de 1949, como "Escola Prática de Agricultura", com localização na antiga Fazenda Jundiaí, distante 3 Km da sede do município de Macaíba, e a 25 Km de Natal, capital do Rio Grande do Norte. </string>
+
+	<string name="descricao_informatica">[DESCIRÇÃO INFORMÁTICA]</string>
+	<string name="nomeEAJ">Escola Agrícola de Jundiaí - UFRN</string>
+	<string name="horarioEAJ">Horario: 6h - 00h</string>
+	<string name="responsavelEAJ">Coordenação</string>
+	<string name="emailEAJ">eaj.ufrn@gov.com.br</string>
+	<string name="telefoneEAJ">(84) 3323-1233</string>
+    <string name="keymap">sua chave</string>
 </resources>

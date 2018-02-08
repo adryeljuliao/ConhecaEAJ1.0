@@ -1,4 +1,4 @@
-package com.idp.conhecaeaj;
+package com.juliao.adryel.guiaeaj;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.viewPageMain);
         tabLayout = (TabLayout) findViewById(R.id.tabMain);
-        PagerAdapter pagerAdapter = new FixedTabsPageAdapter(getSupportFragmentManager());
+        PagerAdapter pagerAdapter = new com.juliao.adryel.guiaeaj.FixedTabsPageAdapter(getSupportFragmentManager());
 
         viewPager.setAdapter(pagerAdapter);
 

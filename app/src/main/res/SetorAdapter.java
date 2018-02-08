@@ -1,4 +1,4 @@
-package com.idp.conhecaeaj;
+package com.juliao.adryel.guiaeaj;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -15,10 +15,10 @@ import java.util.List;
  */
 
 public class SetorAdapter extends RecyclerView.Adapter {
-    private List<SetorEAJ> listaSetores = new ArrayList<>();
+    private List<com.juliao.adryel.guiaeaj.SetorEAJ> listaSetores = new ArrayList<>();
     private Context context;
 
-    public SetorAdapter(List<SetorEAJ> listaSetores, Context context) {
+    public SetorAdapter(List<com.juliao.adryel.guiaeaj.SetorEAJ> listaSetores, Context context) {
         this.listaSetores = listaSetores;
         this.context = context;
     }
@@ -35,7 +35,7 @@ public class SetorAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         SetorViewHolder setorViewHolder = (SetorViewHolder) holder;
-        SetorEAJ setorEscolhido = listaSetores.get(position);
+        com.juliao.adryel.guiaeaj.SetorEAJ setorEscolhido = listaSetores.get(position);
 
         setorViewHolder.nome.setText(setorEscolhido.getNomeSetor());
         setorViewHolder.nomeResponsavel.setText(setorEscolhido.getNomeResponsavel());
