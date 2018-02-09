@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginRight="8dp"
     android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
     android:layout_marginTop="8dp"
     app:cardCornerRadius="4dp">
 
@@ -20,15 +20,18 @@
 
 
             <ImageView
-                android:layout_weight="1.1"
+                android:id="@+id/imageSetor"
                 android:layout_width="0dp"
-                android:layout_height="95dp"
-                android:background="#666"/>
+                android:layout_height="105dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/eaj"
+                android:scaleType="centerCrop"/>
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nomeSetor"
@@ -37,51 +40,82 @@
                     android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
+                    android:singleLine="true"
                     android:text="Escola agricola de jundiai"
                     android:textSize="20dp"
-
+                    android:textStyle="bold"
                     />
+
                 <LinearLayout
-                    android:paddingRight="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingLeft="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    >
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp">
 
                     <ImageView
-                        android:layout_weight="1"
                         android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:paddingLeft="15dp"
-                        android:src="@drawable/ic_relogio"/>
+                        android:layout_height="14dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_telefone" />
+
                     <TextView
-                        android:padding="5dp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
-                        android:text="Horário: 22h - 00h"/>
+                        android:text="(84) 3323-6565"
+                        android:textSize="10sp" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="4dp"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="1dp"
+
+                        android:layout_width="0dp"
+                        android:layout_height="14dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_relogio" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Horário: 22h - 00h"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="0.1dp"
-                    android:background="#959595"
-                    />
+                    android:layout_marginTop="5dp"
+                    android:background="#959595" />
+
                 <Button
+                    android:id="@+id/botDetalhes"
                     android:layout_margin="5dp"
-                    android:background="#de4444"
-                    android:layout_marginRight="5dp"
                     android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_gravity="bottom|right"
-                    android:layout_height="35dp"
-                    android:padding="10dp"
-                    android:text="Ver detalhes"/>
+                    android:layout_marginRight="5dp"
+                    android:background="#de4444"
+                    android:text="Ver detalhes"
+                    android:textColor="#FFF"
+                    android:textSize="10dp" />
             </LinearLayout>
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+
 
 </android.support.v7.widget.CardView>

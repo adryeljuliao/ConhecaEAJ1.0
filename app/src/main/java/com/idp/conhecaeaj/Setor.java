@@ -1,8 +1,10 @@
 package com.idp.conhecaeaj;
 
 
+import java.io.Serializable;
 
-public class Setor {
+public class Setor implements Serializable{
+
     private double latitude;
     private double longetude;
     private String nomeSetor;
