@@ -46,7 +46,7 @@ public class FragmentSetor extends Fragment {
         email.setText(s.getEmailResponsavel());
         telefone.setText(s.getTelefone());
         responsavel.setText(s.getNomeResponsavel());
-        descricao.setText(s.getDescricao());
+        //descricao.setText(s.getDescricao());
         imagemSetor.setImageResource(s.getImage());
         return view;
     }

@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -54,7 +55,7 @@ public class SetorAdapter extends RecyclerView.Adapter {
         //colocar os valores das widgets
         holderSetor.nomeSetor.setText(setor.getNomeSetor());
         holderSetor.horarioSetor.setText(setor.getHorarioFuncionamento());
-        holderSetor.imageSetor.setImageResource(setor.getImage());
+        //holderSetor.imageSetor.setImageResource(setor.getImage());
         holderSetor.telefone.setText(setor.getTelefone());
 
         holderSetor.botao.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +100,7 @@ public class SetorAdapter extends RecyclerView.Adapter {
     public class SetorViewHolder extends RecyclerView.ViewHolder{
 
         final TextView nomeSetor;
-        final Button botao;
+        final ImageButton botao;
         final ImageView imageSetor;
         final TextView horarioSetor;
         final TextView telefone;

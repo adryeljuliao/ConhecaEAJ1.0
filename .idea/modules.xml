@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ConhecaEAJ.iml" filepath="$PROJECT_DIR$/ConhecaEAJ.iml" />
+      <module fileurl="file://C:\Users\Quaresma\Documents\ConhecaEAJ1.0\ConhecaEAJ.iml" filepath="C:\Users\Quaresma\Documents\ConhecaEAJ1.0\ConhecaEAJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConhecaEAJ1.0.iml" filepath="$PROJECT_DIR$/ConhecaEAJ1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
