@@ -52,13 +52,17 @@ public class SetorAdapter extends RecyclerView.Adapter {
         final Setor setor = lista.get(position);
 
         //colocar os valores das widgets
-        holderSetor.nome.setText(setor.getNomeSetor());
+        holderSetor.nomeSetor.setText(setor.getNomeSetor());
+        holderSetor.horarioSetor.setText(setor.getHorarioFuncionamento());
+        holderSetor.imageSetor.setImageResource(setor.getImage());
+        holderSetor.telefone.setText(setor.getTelefone());
+
         holderSetor.botao.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(context, SetorActivity.class);
-                String nome = holderSetor.nome.getText().toString();
+                String nome = holderSetor.nomeSetor.getText().toString();
                 i.putExtra("objSetor", setor);
 
                 Log.i("TESTANDO", nome);
@@ -94,14 +98,18 @@ public class SetorAdapter extends RecyclerView.Adapter {
 
     public class SetorViewHolder extends RecyclerView.ViewHolder{
 
-        final TextView nome;
+        final TextView nomeSetor;
         final Button botao;
         final ImageView imageSetor;
+        final TextView horarioSetor;
+        final TextView telefone;
         public SetorViewHolder(View view){
             super(view);
-            nome = view.findViewById(R.id.nomeSetor);
-            botao = view.findViewById(R.id.botDetalhes);
-            imageSetor = view.findViewById(R.id.imageSetor);
+            nomeSetor = view.findViewById(R.id.nomeSetorLayout);
+            botao = view.findViewById(R.id.botVerDetalhesLayout);
+            imageSetor = view.findViewById(R.id.imageLayout);
+            horarioSetor = view.findViewById(R.id.horarioLayout);
+            telefone = view.findViewById(R.id.telefoneLayout);
         }
 
 

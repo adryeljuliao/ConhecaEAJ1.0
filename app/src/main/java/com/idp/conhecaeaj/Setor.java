@@ -6,13 +6,13 @@ import java.io.Serializable;
 public class Setor implements Serializable{
 
     private double latitude;
-    private double longetude;
+    private double longitude;
     private String nomeSetor;
     private String horarioFuncionamento;
     private String emailResponsavel;
     private String nomeResponsavel;
     private int image;
-    private String descricao;
+    private int descricao;
     private int textao;
     private String telefone;
 
@@ -27,7 +27,7 @@ public class Setor implements Serializable{
         this.textao = textao;
     }
 
-    public Setor(String nomeSetor, String horario, String email, String nomeResponsavel, int image, String descricao, String telefone, double latitude, double longetude) {
+    public Setor(String nomeSetor, String horario, String email, String nomeResponsavel, int image, int descricao, String telefone, double latitude, double longitude) {
         this.nomeSetor = nomeSetor;
         this.horarioFuncionamento = horario;
         this.descricao = descricao;
@@ -36,7 +36,7 @@ public class Setor implements Serializable{
         this.image = image;
         this.telefone = telefone;
         this.latitude = latitude;
-        this.longetude = longetude;
+        this.longitude = longitude;
     }
 
     public void setTextao(int textao) {
@@ -52,9 +52,9 @@ public class Setor implements Serializable{
 
         this.nomeSetor = nomeSetor;
     }
-    public Setor( String nomeSetor, String horarioFuncionamento, String emailResponsavel, String nomeResponsavel, int image, String descricao, int textao, String telefone, double latitude, double longetude) {
+    public Setor( String nomeSetor, String horarioFuncionamento, String emailResponsavel, String nomeResponsavel, int image, int descricao, int textao, String telefone, double latitude, double longitude) {
         this.latitude = latitude;
-        this.longetude = longetude;
+        this.longitude = longitude;
         this.nomeSetor = nomeSetor;
         this.horarioFuncionamento = horarioFuncionamento;
         this.emailResponsavel = emailResponsavel;
@@ -69,15 +69,15 @@ public class Setor implements Serializable{
         this.latitude = latitude;
     }
 
-    public void setLongetude(double longetude) {
-        this.longetude = longetude;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
-    public void setDescricao(String descricao) {
+    public void setDescricao(int descricao) {
         this.descricao = descricao;
     }
 
-    public String getDescricao() {
+    public int   getDescricao() {
         return descricao;
     }
 
@@ -85,8 +85,8 @@ public class Setor implements Serializable{
         return latitude;
     }
 
-    public double getLongetude() {
-        return longetude;
+    public double getLongitude() {
+        return longitude;
     }
 
     public void setNomeSetor(String nomeSetor) {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idPraTeste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar um mapa e quando o cara clicar no mapa
+levar para uma tela com um mapa fullscreen"/>
+</android.support.constraint.ConstraintLayout>

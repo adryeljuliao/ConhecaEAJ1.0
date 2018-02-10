@@ -18,7 +18,6 @@
         </activity>
         <activity
             android:name=".activity.SetorActivity"
-            android:label="@string/title_activity_setor"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
