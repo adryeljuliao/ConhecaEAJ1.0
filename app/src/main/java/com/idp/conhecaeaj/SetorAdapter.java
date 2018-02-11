@@ -69,7 +69,6 @@ public class SetorAdapter extends RecyclerView.Adapter {
                 Log.i("TESTANDO", nome);
                 context.startActivity(i);
 
-                Toast.makeText(context, "clicou no botao", Toast.LENGTH_LONG).show();
 
 
             }

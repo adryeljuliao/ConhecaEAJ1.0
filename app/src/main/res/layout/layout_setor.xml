@@ -44,6 +44,7 @@
                     android:paddingTop="10dp"
                     android:singleLine="true"
                     android:text="Escola agricola de jundiai"
+                    android:textColor="@color/cardview_dark_background"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -67,7 +68,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
                         android:text="(84) 3323-6565"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -91,7 +92,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
                         android:text="Horário: 22h - 00h"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <View
