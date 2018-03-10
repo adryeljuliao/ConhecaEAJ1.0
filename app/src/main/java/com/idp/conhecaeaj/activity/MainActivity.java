@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.idp.conhecaeaj.R;
 import com.idp.conhecaeaj.Setor;
@@ -25,15 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         setorHelper = new SetorHelper(this);
 
-        List<Setor> setorsTemp = null;
+       /* List<Setor> setorsTemp = null;
 
         if(setorHelper.getAll() == null) {
+            Log.i("eae", "começou");
             setorsTemp = setorHelper.createList();
 
             for (int i = 0; i < setorsTemp.size(); i++)
                 setorHelper.insert(setorsTemp.get(i));
-        }
-        listaSetor = setorHelper.getAll();
+        }*/
+        listaSetor = setorHelper.createList();
+        Log.i("eae", "criou");
 
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
         SetorAdapter setorAdapter = new SetorAdapter(MainActivity.this, listaSetor);
